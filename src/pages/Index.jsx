@@ -4,38 +4,36 @@ import { FaHome, FaInfoCircle, FaDollarSign, FaDownload, FaShoppingCart, FaQuest
 
 const LandingPage = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Heading as="h1" size="2xl">
-          Welcome to Bijli SMS
-        </Heading>
-        <HStack spacing={4}>
-          <Button as={Link} to="/" leftIcon={<FaHome />}>
-            Home
-          </Button>
-          <Button as={Link} to="/about" leftIcon={<FaInfoCircle />}>
-            About
-          </Button>
-          <Button as={Link} to="/rates" leftIcon={<FaDollarSign />}>
-            Rates
-          </Button>
-          <Button as={Link} to="/download" leftIcon={<FaDownload />}>
-            Download
-          </Button>
-          <Button as={Link} to="/buy-credits" leftIcon={<FaShoppingCart />}>
-            Buy Credits
-          </Button>
-          <Button as={Link} to="/help" leftIcon={<FaQuestionCircle />}>
-            Help
-          </Button>
-          <Button as={Link} to="/login" leftIcon={<FaSignInAlt />}>
-            Sign In
-          </Button>
-          <Button as={Link} to="/register" leftIcon={<FaUserPlus />}>
-            Register
-          </Button>
-        </HStack>
-      </VStack>
+    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="flex-start" alignItems="center" pt={4}>
+      <HStack spacing={4} mb={8}>
+        <Button as={Link} to="/" leftIcon={<FaHome />}>
+          Home
+        </Button>
+        <Button as={Link} to="/about" leftIcon={<FaInfoCircle />}>
+          About
+        </Button>
+        <Button as={Link} to="/rates" leftIcon={<FaDollarSign />}>
+          Rates
+        </Button>
+        <Button as={Link} to="/download" leftIcon={<FaDownload />}>
+          Download
+        </Button>
+        <Button as={Link} to="/buy-credits" leftIcon={<FaShoppingCart />}>
+          Buy Credits
+        </Button>
+        <Button as={Link} to="/help" leftIcon={<FaQuestionCircle />}>
+          Help
+        </Button>
+        <Button as={Link} to="/login" leftIcon={<FaSignInAlt />}>
+          Sign In
+        </Button>
+        <Button as={Link} to="/register" leftIcon={<FaUserPlus />}>
+          Register
+        </Button>
+      </HStack>
+      <Heading as="h1" size="2xl" textAlign="center">
+        Welcome to Bijli SMS
+      </Heading>
     </Container>
   );
 };
